@@ -34,9 +34,7 @@ function ThankYouInner() {
             <p className="mt-8 mb-4 text-5xl">
                 Thank you for submitting your assignment!
             </p>
-            <Suspense fallback={<div>Loading...</div>}>
-                {renderParams()}
-            </Suspense>
+            {renderParams()}
             <Link href={Routes.HOME} className="mt-4">
                 <Button type="button">
                     Back
